@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3: Submission Guidelines (3/3) | DS6666 Spring 2026</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0; padding: 0; color: #1a1a1a; background: #f5f5f5; line-height: 1.7;
+        }
+        .header {
+            background: #c8102e; color: #fff; padding: 12px 32px;
+            display: flex; align-items: center; justify-content: space-between; font-size: 14px;
+        }
+        .header-logo { font-weight: 700; font-size: 16px; letter-spacing: 0.3px; }
+        .header-nav a { color: rgba(255,255,255,0.8); text-decoration: none; margin-left: 20px; font-size: 13px; }
+        .header-nav a:hover { color: #fff; }
+        .banner {
+            background: #1a1a1a; color: #fff; padding: 20px 32px;
+        }
+        .banner h1 { font-size: 20px; margin: 0 0 4px; }
+        .banner p { margin: 0; font-size: 13px; color: #aaa; }
+        .container {
+            max-width: 720px; margin: 24px auto; padding: 28px 32px;
+            background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .breadcrumb { font-size: 12px; color: #888; margin-bottom: 20px; }
+        .breadcrumb a { color: #c8102e; text-decoration: none; }
+        .tag {
+            display: inline-block; background: #fef2f2; color: #c8102e;
+            font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-bottom: 16px;
+        }
+        h2 { font-size: 18px; margin-top: 24px; color: #1a1a1a; }
+        p { margin: 12px 0; font-size: 15px; }
+        code {
+            background: #f1f5f9; padding: 1px 5px; border-radius: 3px;
+            font-size: 13px; font-family: 'SF Mono', Consolas, monospace;
+        }
+        pre {
+            background: #1e293b; color: #e2e8f0; padding: 14px 18px;
+            border-radius: 6px; overflow-x: auto; font-size: 13px; line-height: 1.6;
+        }
+        pre .comment { color: #64748b; }
+        .callout {
+            background: #fffbeb; border-left: 4px solid #f59e0b;
+            padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 16px 0; font-size: 13px;
+        }
+        .callout strong { color: #92400e; }
+        .success {
+            margin-top: 24px; padding: 16px 18px; background: #f0fdf4;
+            border: 1px solid #86efac; border-radius: 6px; font-size: 14px;
+        }
+        .success strong { color: #166534; }
+        .checklist {
+            background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px;
+            padding: 14px 18px; margin: 20px 0; font-size: 14px;
+        }
+        .checklist strong { color: #334155; }
+        .footer {
+            max-width: 720px; margin: 16px auto 40px; text-align: center;
+            font-size: 11px; color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">Northeastern University — Khoury College of Computer Sciences</div>
+        <div class="header-nav">
+            <a href="#">Canvas</a>
+            <a href="#">Piazza</a>
+            <a href="#">Syllabus</a>
+            <a href="#">Office Hours</a>
+        </div>
+    </div>
+    <div class="banner">
+        <h1>DS6666: Cloud Computing and Big Data Systems</h1>
+        <p>Spring 2026 &middot; Prof. Michael Torres &middot; Mon/Wed 3:25–5:05 PM &middot; Ryder Hall 155</p>
+    </div>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="#">DS6666</a> / <a href="#">Assignments</a> / <a href="..">Assignment 3</a> / Step 3
+        </div>
+        <span class="tag">Due: February 28, 2026 11:59 PM EST</span>
+
+        <h2>Step 3 of 3 — Package and Upload</h2>
+
+        <p>The final step is to package your submission folder into a zip file and upload it to the shared Google Drive folder for TA grading.</p>
+
+        <h3 style="font-size:15px; margin-top:24px; color:#334155;">Zip your submission</h3>
+
+        <pre><span class="comment"># Package the submission folder</span>
+cd ~
+zip -r ds6666_hw3_submission.zip ds6666_hw3_submission/</pre>
+
+        <h3 style="font-size:15px; margin-top:24px; color:#334155;">Upload to Google Drive</h3>
+
+        <p>Upload <code>ds6666_hw3_submission.zip</code> to the shared grading folder:</p>
+
+        <p><a href="#" style="color: #c8102e; font-weight: 600;">📁 DS6666 — Assignment 3 Submissions (Google Drive)</a></p>
+
+        <p>Make sure you are signed in with your <code>@northeastern.edu</code> Google account. Drop your zip file into the folder — do not create subfolders.</p>
+
+        <div class="callout">
+            <strong>Naming convention:</strong> Rename your zip file to <code>LastName_FirstName_hw3.zip</code> before uploading (e.g., <code>Torres_Michael_hw3.zip</code>). Incorrectly named files may not be graded.
+        </div>
+
+        <div class="success">
+            <strong>You're done!</strong>
+            <p style="margin: 6px 0 0;">Once uploaded, you should receive a confirmation email from the autograder within 30 minutes. If you don't receive it, verify your file was uploaded correctly or post on Piazza.</p>
+        </div>
+
+        <div class="checklist">
+            <strong>Final checklist before submitting:</strong><br>
+            ☐ AWS credentials are set in <code>main.py</code><br>
+            ☐ <code>main.py</code> runs without errors locally<br>
+            ☐ Submission folder has correct structure<br>
+            ☐ Zip file is named <code>LastName_FirstName_hw3.zip</code><br>
+            ☐ Uploaded to the shared Google Drive folder<br>
+            ☐ Received autograder confirmation email
+        </div>
+    </div>
+    <div class="footer">
+        Northeastern University &middot; Khoury College of Computer Sciences &middot; DS6666 Spring 2026<br>
+        Questions? Post on Piazza or attend TA office hours (Tue/Thu 1–3 PM, 462 Huntington Ave Room 310)
+    </div>
+</body>
+</html>

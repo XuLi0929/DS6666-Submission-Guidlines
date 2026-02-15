@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3: Submission Guidelines (2/3) | DS6666 Spring 2026</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0; padding: 0; color: #1a1a1a; background: #f5f5f5; line-height: 1.7;
+        }
+        .header {
+            background: #c8102e; color: #fff; padding: 12px 32px;
+            display: flex; align-items: center; justify-content: space-between; font-size: 14px;
+        }
+        .header-logo { font-weight: 700; font-size: 16px; letter-spacing: 0.3px; }
+        .header-nav a { color: rgba(255,255,255,0.8); text-decoration: none; margin-left: 20px; font-size: 13px; }
+        .header-nav a:hover { color: #fff; }
+        .banner {
+            background: #1a1a1a; color: #fff; padding: 20px 32px;
+        }
+        .banner h1 { font-size: 20px; margin: 0 0 4px; }
+        .banner p { margin: 0; font-size: 13px; color: #aaa; }
+        .container {
+            max-width: 720px; margin: 24px auto; padding: 28px 32px;
+            background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .breadcrumb { font-size: 12px; color: #888; margin-bottom: 20px; }
+        .breadcrumb a { color: #c8102e; text-decoration: none; }
+        .tag {
+            display: inline-block; background: #fef2f2; color: #c8102e;
+            font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-bottom: 16px;
+        }
+        h2 { font-size: 18px; margin-top: 24px; color: #1a1a1a; }
+        p { margin: 12px 0; font-size: 15px; }
+        code {
+            background: #f1f5f9; padding: 1px 5px; border-radius: 3px;
+            font-size: 13px; font-family: 'SF Mono', Consolas, monospace;
+        }
+        pre {
+            background: #1e293b; color: #e2e8f0; padding: 14px 18px;
+            border-radius: 6px; overflow-x: auto; font-size: 13px; line-height: 1.6;
+        }
+        pre .comment { color: #64748b; }
+        .structure {
+            background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px;
+            padding: 14px 18px; margin: 16px 0; font-size: 13px;
+            font-family: 'SF Mono', Consolas, monospace; color: #475569; line-height: 1.8;
+        }
+        .callout {
+            background: #fef2f2; border-left: 4px solid #c8102e;
+            padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 16px 0; font-size: 13px;
+        }
+        .callout strong { color: #991b1b; }
+        .nav {
+            margin-top: 32px; padding: 14px; background: #fef2f2;
+            border: 1px solid #fecaca; border-radius: 6px; text-align: center; font-size: 14px;
+        }
+        .nav a { color: #c8102e; text-decoration: none; font-weight: 600; }
+        .footer {
+            max-width: 720px; margin: 16px auto 40px; text-align: center;
+            font-size: 11px; color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">Northeastern University — Khoury College of Computer Sciences</div>
+        <div class="header-nav">
+            <a href="#">Canvas</a>
+            <a href="#">Piazza</a>
+            <a href="#">Syllabus</a>
+            <a href="#">Office Hours</a>
+        </div>
+    </div>
+    <div class="banner">
+        <h1>DS6666: Cloud Computing and Big Data Systems</h1>
+        <p>Spring 2026 &middot; Prof. Michael Torres &middot; Mon/Wed 3:25–5:05 PM &middot; Ryder Hall 155</p>
+    </div>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="#">DS6666</a> / <a href="#">Assignments</a> / <a href="..">Assignment 3</a> / Step 2
+        </div>
+        <span class="tag">Due: February 28, 2026 11:59 PM EST</span>
+
+        <h2>Step 2 of 3 — Organize Submission Directory</h2>
+
+        <p>All assignment files must be placed inside a single submission folder. The autograder expects a specific directory structure — submissions that don't follow this format will receive a 0.</p>
+
+        <p>Create a submission folder and move your <code>main.py</code> into it:</p>
+
+        <pre><span class="comment"># Create submission directory</span>
+mkdir -p ~/ds6666_hw3_submission
+
+<span class="comment"># Move your main.py into the submission folder</span>
+mv main.py ~/ds6666_hw3_submission/</pre>
+
+        <p>Your submission directory should look like this:</p>
+
+        <div class="structure">
+            ds6666_hw3_submission/<br>
+            ├── main.py<br>
+            ├── README.md&nbsp;&nbsp;&nbsp;(optional)<br>
+            └── requirements.txt&nbsp;&nbsp;&nbsp;(if using additional packages)
+        </div>
+
+        <div class="callout">
+            <strong>Grading penalty:</strong> Submissions with incorrect directory structure or missing <code>main.py</code> will be automatically rejected by the autograder. Make sure <code>main.py</code> is directly inside the folder, not in a subfolder.
+        </div>
+
+        <p>If you have additional files (helper modules, config files), include them in the same directory. Do not include your virtual environment or <code>__pycache__</code> folders.</p>
+
+        <div class="nav">
+            <a href="../step3">Continue to Step 3: Package and Upload →</a>
+        </div>
+    </div>
+    <div class="footer">
+        Northeastern University &middot; Khoury College of Computer Sciences &middot; DS6666 Spring 2026<br>
+        Questions? Post on Piazza or attend TA office hours (Tue/Thu 1–3 PM, 462 Huntington Ave Room 310)
+    </div>
+</body>
+</html>
